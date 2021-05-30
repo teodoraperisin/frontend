@@ -1,15 +1,4 @@
---Test podaci
-insert into "preduzece"("id","naziv","pib","sediste","opis")
-values (-100,'Test proizvodjac',3388,'test','test');
 
-insert into "obrazovanje"("id","naziv","stepen_strucne_spreme","opis")
-values (-100,'test','test','test');
-
-insert into "sektor"("id","naziv","oznaka","preduzece")
-values (-100,'test','test',1);
-
-insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
-values (-100,'test','test',66532,1,1);
 
 
 --obrazovanje podaci
@@ -53,12 +42,24 @@ values (4,'Logistika','L',1);
 insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
 values (1,'Teodora','Perisin',6678532,1,1);
 insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
-values (1,'Aleksa','Komosar',6688521,1,2);
+values (2,'Aleksa','Komosar',6688521,1,2);
 insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
-values (1,'Jovana','Ostojic',6659687,2,3);
+values (3,'Jovana','Ostojic',6659687,2,3);
 insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
-values (1,'Maja','Cetic',6321456,3,4);
+values (4,'Maja','Cetic',6321456,3,4);
 insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
-values (1,'Sara','Kijanovic',6678541,4,4);
+values (5,'Sara','Kijanovic',6678541,4,4);
 
+--Test podaci
+insert into "preduzece"("id","naziv","pib","sediste","opis")
+values (-100,'Test proizvodjac',3388,'test','test');
+
+insert into "obrazovanje"("id","naziv","stepen_strucne_spreme","opis")
+values (-100,'test','test','test');
+
+insert into "sektor"("id","naziv","oznaka","preduzece")
+values (-100,'test','test',2);
+
+insert into "radnik"("id","ime","prezime","broj_lk","obrazovanje","sektor")
+values (-100,'test','test',66532,1,1);
 
