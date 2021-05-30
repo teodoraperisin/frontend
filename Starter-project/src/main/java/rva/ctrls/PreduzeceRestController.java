@@ -2,6 +2,8 @@ package rva.ctrls;
 
 import java.util.Collection;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -61,11 +63,14 @@ public class PreduzeceRestController {
 		return new ResponseEntity<Preduzece>(HttpStatus.OK);
 	}
 	
+	@Transactional
 	@DeleteMapping("preduzece/{id}")
 	public ResponseEntity<Preduzece> deletePreduzece(@PathVariable Integer id){
 		if(!preduzeceRepository.existsById(id)) {
 			return new ResponseEntity<Preduzece>(HttpStatus.NO_CONTENT);
 		}
+		
+		jdbcTemplate.execute("DELETE FROM sektor WHERE preduzece=" + id);
 		preduzeceRepository.deleteById(id);
 		if(id == -100) {
 			jdbcTemplate.execute("INSERT INTO \"preduzece\" (\"id\", \"naziv\", \"pib\", \"sediste\", \"opis\")"
