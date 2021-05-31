@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RadnikComponent } from './radnik.component';
+import { RadnikDialogComponent } from './radnik-dialog.component';
 
-describe('RadnikComponent', () => {
-  let component: RadnikComponent;
-  let fixture: ComponentFixture<RadnikComponent>;
+describe('RadnikDialogComponent', () => {
+  let component: RadnikDialogComponent;
+  let fixture: ComponentFixture<RadnikDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RadnikComponent ]
+      declarations: [ RadnikDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RadnikComponent);
+    fixture = TestBed.createComponent(RadnikDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

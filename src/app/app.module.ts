@@ -17,6 +17,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {  MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 import { HomeComponent } from './components/core/home/home.component';
 import { AutorComponent } from './components/core/autor/autor.component';
@@ -27,6 +32,8 @@ import { RadnikComponent } from './components/radnik/radnik.component';
 import { ObrazovanjeComponent } from './components/obrazovanje/obrazovanje.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PreduzeceDialogComponent } from './components/dialogs/preduzece-dialog/preduzece-dialog.component';
+import { SektorDialogComponent } from './components/dialogs/sektor-dialog/sektor-dialog.component';
+import { RadnikDialogComponent } from './components/dialogs/radnik-dialog/radnik-dialog.component';
 
 
 
@@ -42,7 +49,9 @@ import { PreduzeceDialogComponent } from './components/dialogs/preduzece-dialog/
     SektorComponent,
     RadnikComponent,
     ObrazovanjeComponent,
-    PreduzeceDialogComponent
+    PreduzeceDialogComponent,
+    SektorDialogComponent,
+    RadnikDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +70,10 @@ import { PreduzeceDialogComponent } from './components/dialogs/preduzece-dialog/
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatNativeDateModule,
     FormsModule
 
 
