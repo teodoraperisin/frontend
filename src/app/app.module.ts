@@ -10,6 +10,9 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 import { HomeComponent } from './components/core/home/home.component';
 import { AutorComponent } from './components/core/autor/autor.component';
 import { AboutComponent } from './components/core/about/about.component';
@@ -17,6 +20,10 @@ import { PreduzeceComponent } from './components/preduzece/preduzece.component';
 import { SektorComponent } from './components/sektor/sektor.component';
 import { RadnikComponent } from './components/radnik/radnik.component';
 import { ObrazovanjeComponent } from './components/obrazovanje/obrazovanje.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 
 @NgModule({
@@ -39,7 +46,10 @@ import { ObrazovanjeComponent } from './components/obrazovanje/obrazovanje.compo
     MatSidenavModule,
     MatListModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule,
+    HttpClientModule,
+    MatToolbarModule
 
   ],
   providers: [],
