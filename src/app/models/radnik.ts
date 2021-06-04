@@ -1,3 +1,4 @@
+import { Obrazovanje } from "./obrazovanje";
 import { Sektor } from "./sektor";
 
 export class Radnik{
@@ -5,7 +6,7 @@ export class Radnik{
     ime: string;
     prezime: string;
     brojLk: number;
-    //obrazovanje: Obrazovanje;
+    obrazovanje: Obrazovanje;
     sektor: Sektor;
 
 }

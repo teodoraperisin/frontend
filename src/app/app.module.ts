@@ -34,6 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PreduzeceDialogComponent } from './components/dialogs/preduzece-dialog/preduzece-dialog.component';
 import { SektorDialogComponent } from './components/dialogs/sektor-dialog/sektor-dialog.component';
 import { RadnikDialogComponent } from './components/dialogs/radnik-dialog/radnik-dialog.component';
+import { ObrazovanjeDialogComponent } from './components/dialogs/obrazovanje-dialog/obrazovanje-dialog.component';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -51,7 +53,8 @@ import { RadnikDialogComponent } from './components/dialogs/radnik-dialog/radnik
     ObrazovanjeComponent,
     PreduzeceDialogComponent,
     SektorDialogComponent,
-    RadnikDialogComponent
+    RadnikDialogComponent,
+    ObrazovanjeDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +77,8 @@ import { RadnikDialogComponent } from './components/dialogs/radnik-dialog/radnik
     MatCheckboxModule,
     MatSelectModule,
     MatNativeDateModule,
-    FormsModule
+    FormsModule,
+    MatSortModule
 
 
   ],

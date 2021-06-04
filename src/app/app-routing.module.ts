@@ -3,15 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './components/core/about/about.component';
 import { AutorComponent } from './components/core/autor/autor.component';
 import { HomeComponent } from './components/core/home/home.component';
+import { ObrazovanjeComponent } from './components/obrazovanje/obrazovanje.component';
 import { PreduzeceComponent } from './components/preduzece/preduzece.component';
 import { RadnikComponent } from './components/radnik/radnik.component';
 import { SektorComponent } from './components/sektor/sektor.component';
+import { Obrazovanje } from './models/obrazovanje';
 
 
 const routes: Routes = [
   {path: 'preduzece', component: PreduzeceComponent},
-  {path: 'sektor', component: SektorComponent},
-  {path: 'radnik', component: RadnikComponent},
+  {path: 'obrazovanje', component: ObrazovanjeComponent},
+  //{path: 'radnik', component: RadnikComponent},
+  {path: 'sektor',component: SektorComponent},
   {path: 'home', component:HomeComponent},
   {path: 'about', component:AboutComponent},
   {path: 'author', component:AutorComponent},

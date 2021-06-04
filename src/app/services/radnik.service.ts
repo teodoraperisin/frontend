@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { RADNIK_URL } from "../app.constance";
+import { RADNIKID_URL, RADNIK_URL } from "../app.constance";
 import { Radnik } from "../models/radnik";
 
 @Injectable({
@@ -13,6 +13,10 @@ export class RadnikService {
 
     public getAllRadnici(): Observable<any> {
         return this.httpClient.get(`${RADNIK_URL}`)
+    }
+
+    public getRadnikBySektor(idSektor: number): Observable<any>{
+        return this.httpClient.get(`${RADNIKID_URL}/${idSektor}`);
     }
 
     public addRadnik(radnik: Radnik): Observable<any> {
