@@ -36,7 +36,7 @@ import { SektorDialogComponent } from './components/dialogs/sektor-dialog/sektor
 import { RadnikDialogComponent } from './components/dialogs/radnik-dialog/radnik-dialog.component';
 import { ObrazovanjeDialogComponent } from './components/dialogs/obrazovanje-dialog/obrazovanje-dialog.component';
 import { MatSortModule } from '@angular/material/sort';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -78,7 +78,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatSelectModule,
     MatNativeDateModule,
     FormsModule,
-    MatSortModule
+    MatSortModule,
+    MatPaginatorModule
 
 
   ],

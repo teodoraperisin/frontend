@@ -53,4 +53,6 @@
 <div class="container mat-elevation-z8">
   <app-radnik *ngIf="selektovanSektor" [selektovanSektor]="selektovanSektor">
   </app-radnik>
+  <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5,10,25,100]">
+  </mat-paginator>
 </div>
